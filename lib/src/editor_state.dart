@@ -518,7 +518,7 @@ class EditorState {
     });
   }
 
-  void _applyOperation(Operation op) {
+  void _applyOperation(Operation op.notes) {
     if (op is InsertOperation) {
       document.insert(op.path, op.nodes);
     } else if (op is UpdateOperation) {
